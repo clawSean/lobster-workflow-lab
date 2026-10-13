@@ -11,6 +11,14 @@ a second automation platform.
 Build new synthetic workflows first. Do not destabilize systems that already
 work merely to demonstrate a new runtime.
 
+## Current architecture principle
+
+TaskFlow was removed in OpenClaw `2026.9.7`; do not recreate it inside this
+project. Each native runtime owns its own lifecycle. Use direct `llm-task` calls
+for bounded judgment, deterministic helpers for validation and packaging,
+Lobster for stable local steps plus approval/resume, and the appropriate native
+owner (subagents, ACP, Automations, or hooks) for the surrounding job.
+
 ## Candidate applications
 
 1. **Synthetic support-ticket lab** — classify, draft, and review a fictional

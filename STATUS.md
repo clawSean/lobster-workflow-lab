@@ -17,6 +17,13 @@ Exploration.
   `artifacts/`.
 - Public source is published at
   `https://github.com/clawSean/lobster-workflow-lab`.
+- Six research lanes now cover the current architecture, Lobster, `llm-task`,
+  TaskFlow history/removal, composition patterns, and examples/inspiration.
+- The canonical research entry point is `research/00-INDEX.md`; editable and
+  rendered architecture diagrams live beside it.
+- Current-version correction: TaskFlow was removed in OpenClaw `2026.9.7` and
+  is not a third live tool. Its former responsibilities belong to native
+  subagents, ACP, Automations/Cron, Lobster, hooks/webhooks, or project state.
 
 ## Known compatibility boundary
 
@@ -28,5 +35,6 @@ claim.
 
 ## Next
 
-Add one deterministic Lobster packaging/approval stage without touching
-Mailreef or Clawloop.
+Harden the synthetic ticket flow with schemas and a deterministic package, then
+add one Lobster approval/resume stage that writes only an ignored local artifact.
+Do not touch Mailreef or Clawloop yet.

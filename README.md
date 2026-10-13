@@ -36,3 +36,14 @@ Generated runs are written beneath `artifacts/` and excluded from Git.
 
 See [VISION.md](VISION.md) for candidate applications and [STATUS.md](STATUS.md)
 for current proof.
+
+## Research pack
+
+The durable research corpus now lives at [research/00-INDEX.md](research/00-INDEX.md).
+It includes six detailed reports plus editable HTML/SVG and rendered PNG
+architecture diagrams.
+
+One important correction: **TaskFlow is historical, not a current third tool.**
+OpenClaw `2026.9.7` removed the shared Tasks/TaskFlow runtime and APIs. The
+current stack is Lobster + direct `llm-task`, with native subagents, ACP,
+Automations, hooks, or project-owned state handling the surrounding lifecycle.

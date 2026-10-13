@@ -18,3 +18,19 @@ Append-only experiment log.
 - Unit tests passed `3/3`.
 - Published the canonical project to
   `https://github.com/clawSean/lobster-workflow-lab`.
+
+## 2026-10-13 — Research and architecture correction
+
+- Ran six research lanes across official/current architecture, Lobster,
+  `llm-task`, TaskFlow history, composition, and ecosystem inspiration.
+- Added `research/00-INDEX.md` as the canonical entry point and linked it from
+  the project README.
+- Corrected the original three-tool mental model: OpenClaw `2026.9.7` removed
+  Tasks/TaskFlow with no compatibility facade. The current buildable stack is
+  Lobster + direct `llm-task`, surrounded by the appropriate native lifecycle
+  owner rather than a replacement monolith.
+- Used Claude Foreman to specify the diagram, then produced and visually checked
+  standalone HTML, SVG, and PNG artifacts.
+- Preserved the embedded bridge boundary: nested `llm-task` from embedded
+  Lobster remains unsupported/unproven; direct Gateway invocation is proven.
+- No packages, configuration, Gateway processes, or external systems changed.
