@@ -49,6 +49,9 @@ adapter. That bridge remains unsupported/unproven.
 6. [Examples and inspiration](06-examples-and-inspiration.md) — official and
    community examples, portable lessons from adjacent workflow systems, and a
    ranked experiment backlog.
+7. [Gateway restart interruption rollout](07-gateway-restart-interruption-rollout.md)
+   — a staged, fail-closed cross-channel recovery-notice proposal, including the
+   correct Jev/decision-model boundary and deterministic-first rollout gates.
 
 ## Visuals
 
@@ -92,7 +95,7 @@ reports 01 and 04.
 
 ## Research method and limitations
 
-Six independent research lanes covered current architecture, Lobster,
+Six independent research lanes plus the restart-recovery proposal cover Lobster,
 `llm-task`, TaskFlow migration, composition, and ecosystem examples. Claude
 Foreman supplied the diagram specification; the final visual was simplified and
 checked against the installed source.

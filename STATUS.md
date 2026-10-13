@@ -24,6 +24,11 @@ Exploration.
 - Current-version correction: TaskFlow was removed in OpenClaw `2026.9.7` and
   is not a third live tool. Its former responsibilities belong to native
   subagents, ACP, Automations/Cron, Lobster, hooks/webhooks, or project state.
+- A reference-only rollout proposal now covers Gateway-restart interruption
+  notices across channels. It starts with dry-run/JPop-only deterministic rules
+  and evaluates Jev later through the separate decision-model contract.
+- No restart hook, TypeSafe provider, notification sender, configuration, or
+  outbound recovery notice has been activated by that proposal.
 
 ## Known compatibility boundary
 

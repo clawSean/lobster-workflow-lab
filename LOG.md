@@ -34,3 +34,17 @@ Append-only experiment log.
 - Preserved the embedded bridge boundary: nested `llm-task` from embedded
   Lobster remains unsupported/unproven; direct Gateway invocation is proven.
 - No packages, configuration, Gateway processes, or external systems changed.
+
+## 2026-10-13 — Gateway restart recovery rollout documented
+
+- Added a reference design for detecting probably interrupted human chats after
+  Gateway startup and sending one deduplicated notice to the exact conversation.
+- Defined a deterministic-first rollout: frozen fixtures, dry run, JPop-only
+  delivery, explicit allowlists, then an optional model bakeoff.
+- Corrected the model boundary: Jev is a strong typed Boolean/Choice candidate
+  for ambiguous interruption judgments, but it belongs to OpenClaw's separate
+  decision-model contract rather than serving as an `llm-task` completion model.
+- Recorded the current availability boundary: `llm-task` is loaded, while the
+  external TypeSafe provider is not installed and remains a future dependency.
+- No hook, provider install, config change, Gateway restart, or outbound message
+  was performed.

@@ -40,10 +40,16 @@ for current proof.
 ## Research pack
 
 The durable research corpus now lives at [research/00-INDEX.md](research/00-INDEX.md).
-It includes six detailed reports plus editable HTML/SVG and rendered PNG
+It includes seven detailed reports plus editable HTML/SVG and rendered PNG
 architecture diagrams.
 
 One important correction: **TaskFlow is historical, not a current third tool.**
 OpenClaw `2026.9.7` removed the shared Tasks/TaskFlow runtime and APIs. The
 current stack is Lobster + direct `llm-task`, with native subagents, ACP,
 Automations, hooks, or project-owned state handling the surrounding lifecycle.
+
+The newest report documents a staged
+[Gateway restart interruption-notice rollout](research/07-gateway-restart-interruption-rollout.md).
+It begins with deterministic dry runs and JPop-only delivery; Jev is evaluated
+later through OpenClaw's separate decision-model role, not treated as an
+`llm-task` completion model.
