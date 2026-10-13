@@ -1,0 +1,7 @@
+{
+  "id": "SYNTH-001",
+  "customer": "Avery Example",
+  "product": "Tidepool Notes",
+  "subject": "Shared note shows the old title",
+  "body": "I renamed a shared note from Trip Draft to Final Itinerary. My own screen shows the new name, but the public share page still shows Trip Draft after ten minutes. I have not tried deleting or recreating the share link because I do not want to break it."
+}

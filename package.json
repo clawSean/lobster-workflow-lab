@@ -1,0 +1,14 @@
+{
+  "name": "lobster-workflow-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Synthetic OpenClaw Lobster and llm-task workflow experiments",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "ticket-lab": "node src/run-ticket-lab.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
